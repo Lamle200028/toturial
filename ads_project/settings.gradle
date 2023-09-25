@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ads_project"
+include ':Ads'
+include ':BottomSheetDialog'
+include ':Recycalview'
+include ':recycalviewcustom'
+include ':viewpager'
+include ':fragmentDialog_ratingbar'
+include ':navigation'
+include ':callapi'
+include ':faceid'
+include ':openfile'
+include ':faceauthentic'
+
+include ':java'
+include ':coroutine'

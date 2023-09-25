@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            tools:context=".MainActivity">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_rate"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/fivestart">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/image_rate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1">
+
+            </RatingBar>
+
+            <TextView
+                android:id="@+id/Rating_button"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_rating_dialog"
+                android:layout_marginHorizontal="24dp"
+                android:gravity="center"
+                android:text="rate us"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/ratingbar"
+                app:layout_constraintStart_toStartOf="@+id/ratingbar"
+                app:layout_constraintTop_toBottomOf="@id/ratingbar">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close_rating_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_popup"
+            android:layout_alignParentRight="true">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+    </RelativeLayout>
+
+</layout>
